@@ -1,0 +1,17 @@
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 9999
+      POSTGRES_DB: canciones_db
+    ports:
+      - "5432:5432"
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
