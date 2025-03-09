@@ -3,7 +3,6 @@ Este proyecto es un microservicio API REST que gestiona canciones, desarrollado 
 - **Node.js** y **Express.js**
 - **PostgreSQL** con **Sequelize**
 - **Docker** para contenedorización
-- **railway** para despliegue en la nube
 
 ## **Cómo Ejecutar**
 ```sh
